@@ -3,13 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LightComponent } from './InnoComponent/light/light.component';
-
+import { StockItemComponent } from './stock/stock-item/stock-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LightComponent
+    StockItemComponent
   ],
   imports: [
     BrowserModule,

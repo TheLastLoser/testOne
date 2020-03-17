@@ -1,9 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "Inno": {
+    "stock-market": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Inno",
+            "outputPath": "dist/stock-market",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,9 +26,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-     "./node_modules/hammerjs/hammer.min.js"
-   ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -64,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Inno:build"
+            "browserTarget": "stock-market:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Inno:build:production"
+              "browserTarget": "stock-market:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Inno:build"
+            "browserTarget": "stock-market:build"
           }
         },
         "test": {
@@ -112,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Inno:serve"
+            "devServerTarget": "stock-market:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Inno:serve:production"
+              "devServerTarget": "stock-market:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Inno"
+  "defaultProject": "stock-market"
 }
