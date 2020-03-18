@@ -10,9 +10,14 @@
   <h1>
     Welcome to {{title}}
   </h1>
-  <app-stock-item></app-stock-item>
+  <app-stock-item [stocks]="stocks"
+                  (toggleFavorite)="onToggleFavorite($event)">
+  </app-stock-item>
 </div>
-
+<div style="text-align:center; padding-top:3em">
+  <button (click)="changeStockObject()">Change Stock </button>
+  <button (click)="changeStockPrice()">Change Price </button>
+</div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
